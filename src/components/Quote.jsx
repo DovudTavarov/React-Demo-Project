@@ -27,7 +27,7 @@ export default class Quote extends Component {
     return (
       <div className="App">
         <p>{currentQuote.text}</p>
-        <p>- {currentQuote.author}</p>
+        <p>- {currentQuote.author ?? "Unknown"}</p>
         <div className="buttons">
           <button onClick={this.prevBtn}>Previous</button>
           <button onClick={this.nextBtn}>Next</button>
